@@ -2,7 +2,7 @@
 
 namespace lino_dp\FacebookTestuserBundle;
 
-use lino_dp\FacebookTestuserProvider;
+use \lino_dp\FacebookTestuserBundle\FacebookTestuserProvider;
 
 class Tests extends \PHPUnit_Framework_TestCase
 {
@@ -23,7 +23,7 @@ class Tests extends \PHPUnit_Framework_TestCase
         $fbmock = $this->getMock('BaseFacebook');
         $fbmock->expects($this->once())->method('api')->will($this->returnValue(json_encode($responseObject)));
 
-        $provider = new \lino_dp\FacebookTestuserBundle\FacebookTestuserProvider($fbmock);
+        $provider = new FacebookTestuserProvider($fbmock);
 
         $response = $provider->addTestUser(true, null, null, null);
 
