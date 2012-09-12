@@ -1,5 +1,5 @@
 {
-    "name": "lino-dp/FacebookTestuserBundle",
+    "name": "lino_dp/FacebookTestuserBundle",
     "type": "symfony-bundle",
     "description": "Provides Facebook Test Users",
     "keywords": ["test", "bundle"],
@@ -19,7 +19,7 @@
         "symfony/framework-bundle": ">=2.1,<2.2-dev"
     },
     "autoload": {
-        "psr-0": { "lino_dp\\FacebookTestuserBundle": "" }
+        "psr-0": { "lino_dp\\FacebookTestuserBundle": "src/" }
     },
     "minimum-stability": "dev",
     "target-dir": ""
