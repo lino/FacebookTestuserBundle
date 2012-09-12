@@ -19,7 +19,7 @@
         "symfony/framework-bundle": ">=2.1,<2.2-dev"
     },
     "autoload": {
-        "psr-0": { "lino-dp\\FacebookTestuserBundle": "" }
+        "psr-0": { "lino_dp\\FacebookTestuserBundle": "" }
     },
     "minimum-stability": "dev",
     "target-dir": "lino-dp/facebooktestuserbundle"
