@@ -4,7 +4,6 @@
     "keywords": ["facebook", "testing"],
     "type": "library",
     "homepage": "https://github.com/lino-dp/FacebookTestuserBundle",
-    "license": "Apache2",
     "require": {
         "php": ">=5.2.0",
         "facebook/facebook-php-sdk": "master"
