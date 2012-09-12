@@ -1,14 +1,5 @@
 {
-    "name": "lino-dp/FacebookTestuserBundle",
-    "description": "Development Tool that manages facebook test users",
-    "keywords": ["facebook", "testing"],
-    "type": "library",
-    "homepage": "https://github.com/lino-dp/FacebookTestuserBundle",
     "require": {
-        "php": ">=5.2.0",
-        "facebook/facebook-php-sdk": "master"
-    },
-    "autoload": {
-        "classmap": ["src"]
+        "facebook/php-sdk": "dev-master"
     }
 }
