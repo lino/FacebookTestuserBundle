@@ -6,6 +6,6 @@ class BundleTests extends \PHPUnit_Framework_TestCase
 {
     public function testDummy()
     {
-        $this->markTestIncomplete('Test is included');
+        $this->markTestIncomplete('Test is included (Ohai Travis)');
     }
 }
