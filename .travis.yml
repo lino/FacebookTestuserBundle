@@ -1,5 +1,15 @@
 language: php
+
 php:
   - 5.3
   - 5.4
-script: phpunit --stderr src/Tests/Tests.php
+
+before_script:
+    - curl -s http://getcomposer.org/installer | php
+    - php composer.phar --dev install
+
+script: phpunit --debug
+
+notifications:
+  email:
+    - lhelms@gmail.com
