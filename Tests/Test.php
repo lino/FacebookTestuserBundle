@@ -20,7 +20,7 @@ class Tests extends \PHPUnit_Framework_TestCase
         $responseObject->email = "testuser@foobar.edu";
         $responseObject->password = "5555105";
 
-        $fbmock = $this->getMock('BaseFacebook');
+        $fbmock = $this->getMock('Facebook');
         $fbmock->expects($this->once())->method('api')->will($this->returnValue(json_encode($responseObject)));
 
         $provider = new \lino_dp\FacebookTestuserBundle\FacebookTestuserProvider($fbmock);
