@@ -1,8 +1,8 @@
 <?php
 
-namespace lino_dp\FacebookTestuserBundle\Tests;
+namespace linodp\FacebookTestuserBundle;
 
-require('../../autoload.php');
+use linodp\FacebookTestuserProvider;
 
 class Tests extends \PHPUnit_Framework_TestCase
 {
@@ -20,7 +20,7 @@ class Tests extends \PHPUnit_Framework_TestCase
         $responseObject->email = "testuser@foobar.edu";
         $responseObject->password = "5555105";
 
-        $fbmock = $this->getMock('Facebook', array('api'), array(), '', false, false, true);
+        $fbmock = $this->getMock('BaseFacebook');
         $fbmock->expects($this->once())->method('api')->will($this->returnValue(json_encode($responseObject)));
 
         $provider = new \lino_dp\FacebookTestuserBundle\FacebookTestuserProvider($fbmock);
@@ -28,5 +28,10 @@ class Tests extends \PHPUnit_Framework_TestCase
         $response = $provider->addTestUser(true, null, null, null);
 
         $this->assertEquals(json_encode($response), $response);
+    }
+
+    public function testDeleteUser()
+    {
+        $this->markTestIncomplete('tbd');
     }
 }
